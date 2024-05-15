@@ -1,0 +1,22 @@
+.{
+    .name = "nanovgxc-build-zig",
+    .version = "0.0.0",
+
+    .dependencies = .{
+        .glfw = .{
+            .url = "https://github.com/hexops/mach-glfw/archive/refs/heads/main.tar.gz",
+            .hash = "1220a72c54b4a3674a1e5a907ac6ea33d1868681f187f5a07f3cfb562ff7cf2c63e0",
+            .lazy = true,
+        },
+        .nanovgxc = .{
+            .url = "https://github.com/styluslabs/nanovgXC/archive/refs/heads/master.tar.gz",
+            .hash = "1220ebd99e8be4c979bd7a04abe59ab983f5b982de26cf8a8e064d63b7cea14fd463",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "c",
+        "exemple",
+    },
+}
